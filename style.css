@@ -1,11 +1,78 @@
-#map 
+body
 {
-    height: 100%;
+	margin: 0;
 }
 
-html, body
+/* Slider */
+.sliderContainer
 {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+	width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.sliderImage
+{
+	width: 100%;
+}
+
+.slider
+{
+     display: none;
+}
+
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.prev
+{
+	transform: translate(-50%, -50%);
+}
+
+.next 
+{
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.fa-chevron-left
+{
+	position: absolute;
+  	top: 50%;
+  	right: 30%;
+  	transform: translate(50%, -50%);
+}
+
+.fa-chevron-right
+{
+	position: absolute;
+  	top: 50%;
+  	left: 30%;
+  	transform: translate(-50%, -50%);
+}
+
+/* Map Google */
+.mapContainer
+{
+	display: flex;
+}
+
+#map 
+{
+    width: 60%;
+    height: 400px;
+}
+.panneau
+{
+	width: 40%;
+	background: red;
 }

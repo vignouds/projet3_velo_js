@@ -1,7 +1,27 @@
-var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 45.765591, lng: 4.833026},
-          zoom: 13
-        });
-      }
+
+/*Slider*/
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+ 	showSlides(slideIndex += n);	
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slider");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+
+/*Google map*/
+function initMap() {
+var map = new google.maps.Map(document.getElementById('map'), {
+  center: {lat: 45.765591, lng: 4.833026},
+  zoom: 13
+});
+}

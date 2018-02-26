@@ -4,11 +4,28 @@
 	<title>Application de réservation de vélo à Lyon</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	 <link rel="stylesheet" type="text/css" href="./fontawesome/css/fontawesome-all.css">
 </head>
 <body>
-	<div id="map"></div>
+	<div class="sliderContainer">
+		<div class="slider">
+			<img src="./images/slider/bg1.jpg" alt="Image slider 1" class="sliderImage">
+		</div>
+		<div class="slider">
+			<img src="./images/slider/bg2.jpg" alt="Image slider 2" class="sliderImage">
+		</div>
+	  <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+	  <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+	</div>
+	<div class="mapContainer">
+		<div id="map"></div>
+		<div class="panneau">
+			Détails de la station
+		</div>
+	</div>
+
 	<script src="./script.js"></script>
-	<script src="jquery-3.3.1.js"></script>
+	<script src="./jquery-3.3.1.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpssGdZBaNqGuSwZ9RAr6Zsld70q55iog &callback=initMap" async defer></script>
 </body>
 </html>
