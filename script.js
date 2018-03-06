@@ -47,13 +47,14 @@ var map = new google.maps.Map(document.getElementById('map'), {
   zoom: 13
 });
 var marker = new google.maps.Marker({
-    position: lyon,
-    map: 'map'
-});
+      position: lyon,
+      map: map
+  });
+}
+
 /*marqueurs.forEach(function (marq) {
   var marker = new google.maps.Marker({
       position: {lat: marqueur.lattitude, lng: marqueur.longitude},
       map: 'map'
   });
 });*/
-}
