@@ -47,14 +47,16 @@ var map = new google.maps.Map(document.getElementById('map'), {
   zoom: 13
 });
 var marker = new google.maps.Marker({
-      position: lyon,
+      position: {lat: 45.765591, lng: 4.833026},
       map: map
   });
 }
-
 /*marqueurs.forEach(function (marq) {
   var marker = new google.maps.Marker({
       position: {lat: marqueur.lattitude, lng: marqueur.longitude},
       map: 'map'
   });
 });*/
+
+//Instancier Marker
+//Récupérer lattitude et longitude dans tableau et les affecter aux markers
