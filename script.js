@@ -52,9 +52,12 @@ var marker = new google.maps.Marker({
   });
 }
 /*marqueurs.forEach(function (marq) {
+  var lat = marqueur.latitude;
+  var lng = marqueur.longitude;
+  var pos = new google.maps.LatLng(lat, lng);
   var marker = new google.maps.Marker({
-      position: {lat: marqueur.lattitude, lng: marqueur.longitude},
-      map: 'map'
+      position: pos,
+      map: map
   });
 });*/
 
